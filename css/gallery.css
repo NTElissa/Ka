@@ -6,9 +6,6 @@ body {
     color: #333;
 }
 
-
-
-
 header {
     position: fixed;
     width: 100%;
@@ -211,20 +208,7 @@ header {
     .social-icons {
         justify-content: center;
     }
-}
 
-.social-icons a {
-    color: white;
-    font-size: 1.5em;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: white;
-}
-
-@media (max-width: 768px) {
     .topnav .nav-links {
         display: none;
         flex-direction: column;
