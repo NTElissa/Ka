@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Posts</title>
+    <link rel="stylesheet" href="dashboard-css/post-dashboard.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Include Header -->
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="#" class="logo">Dashboard</a>
+            <a href="dashboard.html">Home</a>
+            <a href="#" class="active">Posts</a>
+            <a href="#">Profile</a>
+            <a href="#">Notifications</a>
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
+            <button class="icon" onclick="toggleNav()">☰</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>User Profile</h3>
+            <div class="profile-info">
+                <img src="images/profile-pic.jpg" alt="Profile Picture">
+                <h4>John Doe</h4>
+                <p>Email: john@example.com</p>
+                <p>Joined: January 1, 2024</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="header">
+                <h1>Your Posts</h1>
+                <button class="add-post-btn" onclick="createNewPost()"><i class="fas fa-plus"></i> Add Post</button>
+            </div>
+            <div class="post-list">
+                <!-- Display user's posts -->
+                <div class="post">
+                    <h2>Post Title 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#">Edit</a> | <a href="#">Delete</a>
+                </div>
+                <div class="post">
+                    <h2>Post Title 2</h2>
+                    <p>Nulla quis lorem ut libero malesuada feugiat.</p>
+                    <a href="#">Edit</a> | <a href="#">Delete</a>
+                </div>
+                <!-- More posts can go here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Footer -->
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+
+    <script src="javascript/posts-script.js"></script>
+    <script>
+        function toggleNav() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function createNewPost() {
+            // Implement logic to create a new post
+            alert("Create New Post functionality goes here!");
+        }
+    </script>
+</body>
+</html>

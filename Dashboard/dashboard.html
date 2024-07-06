@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="dashboard-css/dashboard.css">
+</head>
+<body>
+    <!-- Include Header -->
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="#" class="logo">Dashboard</a>
+            <a href="#" class="active">Home</a>
+            <a href="post-dashboard.html">Posts</a>
+            <a href="#">Profile</a>
+            <a href="#">Notifications</a>
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
+            <button class="icon" onclick="toggleNav()">☰</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>User Profile</h3>
+            <div class="profile-info">
+                <img src="../images/logokayenzi.jpg" alt="Profile Picture">
+                <h4>John Doe</h4>
+                <p>Email: john@example.com</p>
+                <p>Joined: January 1, 2024</p>
+                <!-- Additional profile information can go here -->
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Notifications</h3>
+                <ul class="notifications">
+                    <li>New message from Jane Smith</li>
+                    <li>Your post has been liked by 5 users</li>
+                    <!-- More notifications can go here -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <h1>Welcome back, John!</h1>
+            <div class="post-section">
+                <h2>Your Recent Posts</h2>
+                <!-- Display user's recent posts -->
+                <div class="post">
+                    <h3>Post Title</h3>
+                    <p>Posted on: June 10, 2024</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.</p>
+                </div>
+                <!-- More posts can go here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Footer -->
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+
+    <script src="javascript/dashboard-script.js"></script>
+    <script>
+        function toggleNav() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>
